@@ -26,4 +26,4 @@ if not os.path.exists(directory):
     os.makedirs(directory)
 file_path = os.path.join(directory, 'results.txt')
 data = np.column_stack((x, y))
-np.savetxt(file_path, data, fmt='%.3f',delimiter='    ', header='x\t\tf(x)', comments='')
+np.savetxt(file_path, data, fmt='%.3f',delimiter='    ', header='x\t\tf(x)')
